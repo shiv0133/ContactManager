@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      th:replace="base::Layout(~{::section})" >
+<head>
+  <meta charset="UTF-8">
+  <title>DOCUMENT</title>
+</head>
+<body>
+<section >
+  <div class="container">
+    <div class="row">
+        <div >
+
+            <div class="my-card mt-2">
+                <div class="container text-center">
+                <img src="#" th:src="@{/images/img.png}" alt="" style="width: 80px"  />
+                </div>
+            <h1  class="text-center">Register Here !!</h1>
+
+             <form action="#" th:action="@{register}" method="post">
+        <!-- name field-->
+                    <div class="mb-3">
+                        <label for="name_field" class="form-label">Your Name</label>
+                           <input type="text"
+                               class="form-control"
+                                  id="name_field"
+                                  aria-describedby="emailHelp"
+                                  placeholder="Enter here"
+                                    required="required"
+                                     /></div>
+                                     <!-- email field-->
+                               <div class="mb-3">
+                                     <label for="email_field" class="form-label">Your Email</label>
+                                       <input type="email"
+                                           class="form-control"
+                                              id="email_field"
+                                                aria-describedby="emailHelp"
+                                                 placeholder="Enter here"
+                                                     required="required"
+
+                                       /></div>
+
+                                                <!-- password field-->
+                                       <div class="mb-3">
+                                         <label for="pasword_field" class="form-label">Password</label>
+                                           <input type="password"
+                                              class="form-control"
+                                               id="pasword_field"
+                                                      aria-describedby="emailHelp"
+                                                  placeholder="Enter here"
+                                                      required="required"
+                                       /></div>
+
+                                                      <!-- about field-->
+
+                                                 <div class="form-group shadow-textarea">
+                                                         <label for="exampleFormControlTextarea6">About</label>
+                                                                <textarea class="form-control z-depth-1" id="exampleFormControlTextarea6"
+                                                                     rows="4" placeholder="Write something here...">
+
+                                                                </textarea>
+                                                         </div>
+                                                         <!--button-->
+                                                              <div class="container text-center" >
+                                                              <button class="btn bg-primary text-white"
+                                                                      type="submit">
+                                                                             Submit
+                                                                 </button>
+                                                             <button class="btn btn-warning text-white"
+                                                                        type="reset">
+                                                                            Reset
+                                                                           </button>
+                                                                            </div>
+
+
+    </form>
+
+</div>
+</div>
+
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>
